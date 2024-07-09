@@ -17,7 +17,6 @@ function Portfolio() {
     useEffect(() => {
         if (isInView) {
             mainControls.start("show")
-            console.log("Teste");
         }
     }, [isInView]);
 
@@ -46,7 +45,7 @@ function Portfolio() {
     return (
         <div
             ref={containerRef}
-            className='mb-40'
+            className='mb-40 px-4'
         >
             <div>
                 <motion.h1
@@ -54,7 +53,7 @@ function Portfolio() {
                     animate={{ x: 0, opacity: 1 }}
                     exit={{ x: 10, opacity: 0 }}
                     transition={{ duration: 1, delay: 0.4 }}
-                    className='text-left text-2xl sm-0:text-4xl my-10 font-sans'
+                    className='text-left text-2xl md_1:text-xl sm-0:text-4xl my-10 font-sans'
                 >
                     Portfólio
                 </motion.h1>
@@ -70,7 +69,18 @@ function Portfolio() {
                     effect={'coverflow'}
                     loop={true}
                     centeredSlides={true}
-                    slidesPerView={'3'}
+                    slidesPerView={1}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 1,
+                        },
+                        641: {
+                            slidesPerView: 2,
+                        },
+                        2000: {
+                            slidesPerView: 3,
+                        }
+                    }}
                     coverflowEffect={{
                         rotate: 50,
                         stretch: 0,
@@ -83,38 +93,38 @@ function Portfolio() {
                         disableOnInteraction: false,
                     }}
                     modules={[EffectCoverflow, Autoplay]}
-                    className="w-2/3"
+                    className="w-full lg:w-4/5 xl:w-3/4 2xl:w-2/3 mx-auto"
                 >
                     <SwiperSlide>
-                        <img src="/projects/tumbs/movieListTumb.png" />
+                        <img src="/projects/tumbs/movieListTumb.png" alt="Projeto 1" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src="/projects/tumbs/arquiteturaTumb.png" />
+                        <img src="/projects/tumbs/arquiteturaTumb.png" alt="Projeto 2" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="Natureza 1" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="Natureza 2" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="Natureza 3" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                        <img src="https://swiperjs.com/demos/images/nature-6.jpg" alt="Natureza 4" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                        <img src="https://swiperjs.com/demos/images/nature-7.jpg" alt="Natureza 5" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                        <img src="https://swiperjs.com/demos/images/nature-8.jpg" alt="Natureza 6" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                        <img src="https://swiperjs.com/demos/images/nature-9.jpg" alt="Natureza 7" />
                     </SwiperSlide>
                 </Swiper>
             </motion.div>
-            <motion.div 
+            <motion.div
                 initial={{ y: -10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: 10, opacity: 0 }}

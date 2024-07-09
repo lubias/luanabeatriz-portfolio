@@ -27,7 +27,7 @@ function About() {
                     animate={{ x: 0, opacity: 1 }}
                     exit={{ x: -10, opacity: 0 }}
                     transition={{ duration: 1 }}
-                    className='flex flex-col gap-2 md_1:text-sm font-light md_2:gap-4 md_2:text-xs text-center'
+                    className='flex flex-col gap-2 md_1:text-sm font-light md_2:gap-4 md_2:text-xs text-justify'
                 >
                     <p>
                         Olá, eu sou Luana Beatriz, uma profissional apaixonada pelo mundo da tecnologia e desenvolvimento de jogos digitais. Sou graduada em Design de Jogos Digitais, o que me proporciona uma sólida base criativa e técnica. Ao longo da minha carreira, venho me especializando em desenvolvimento web, combinando design intuitivo com programação eficiente.
