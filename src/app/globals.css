@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.dark {
+  --color-bg-gradient: rgb(50,37,63);
+  --color-bg-gradient-2: linear-gradient(0deg, rgba(50,37,63,1) 0%, rgba(140,97,140,1) 22%, rgba(68,54,89,1) 49%, rgba(50,37,63,1) 100%);
+  --color-bg-primary: #232325;
+  --color-bg-primary-opacity: #23232584;
+  --color-text-primary: #f2f2f2;
+  --color-text-secondary: #c4a567;
+  --color-text-hover: #c4a567;
+  --color-bg-secondary: #323232;
+  --box-shadow-primary: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  --box-shadow-secondary: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --box-shadow-card: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+    rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+    rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
+    rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  --primary: #232325;
+  --secondary: #c4a567;
+}
+
+.light {
+  --color-bg-primary: #f2f2f2;
+  --color-bg-primary-opacity: #f2f2f284;
+  --color-text-primary: #232325;
+  --color-text-secondary: #323232;
+  --color-text-hover: #c4a567;
+  --color-bg-secondary: #e9e9e9;
+  --box-shadow-primary: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  --box-shadow-secondary: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --box-shadow-card: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+    rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+    rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
+    rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  --primary: #f2f2f2;
+  --secondary: #323232;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-track{
+  background: #32253f;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #8C618C;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #443659;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
