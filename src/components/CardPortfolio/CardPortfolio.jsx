@@ -6,8 +6,12 @@ import { motion } from "framer-motion";
 function CardPortfolio({ img, name, description, skills, url_git, url_project }) {
     return (
         <>
-            <div
-                class="card shadow-[0px_4px_16px_px_#367E08] h-[450px] w-[full] group gap-4 rounded-[1.5em] relative flex justify-end flex-col p-[1.5em] z-[1] overflow-hidden space-y-5"
+            <motion.div
+                class="card shadow-custom h-[450px] w-[full] group gap-4 rounded-[1.5em] relative flex justify-end flex-col p-[1.5em] z-[1] overflow-hidden space-y-5"
+                initial={{ x: 10, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                exit={{ x: -10, opacity: 0 }}
+                transition={{ duration: 1 }}
             >
                 <div class="absolute top-0 left-0 h-full w-full bg-[#171717]">
                     <img src={img} alt="" className='group-hover:opacity-15' />
@@ -49,7 +53,7 @@ function CardPortfolio({ img, name, description, skills, url_git, url_project })
                 >
                     {description}
                 </p>
-            </div>
+            </motion.div>
 
         </>
     )
