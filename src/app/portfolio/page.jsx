@@ -27,8 +27,8 @@ function page() {
     };
 
     return (
-        <div>
-            <div className="px-56 sm-0:px-6 mb-20">
+        <>
+            <div className="px-56 lg_2:px-12 sm_1:px-4">
                 <Header />
                 <div className='mt-14 mb-10'>
                     <motion.h1
@@ -53,8 +53,9 @@ function page() {
                                 }
                             },
                         }}
-                        className='flex justify-between'
+                        className='grid grid-cols-4 lg_1:grid-cols-3 lg_3:grid-cols-2 md_2:grid-cols-1 gap-6 justify-between'
                     >
+                        <CardPortfolio {...projectDetails} />
                         <CardPortfolio {...projectDetails} />
                         <CardPortfolio {...projectDetails} />
                         <CardPortfolio {...projectDetails} />
@@ -63,11 +64,11 @@ function page() {
             </div>
             <div className='h-[75px]'></div>
             <hr />
-            <div className="px-56 sm-0:px-12">
+            <div className="px-56 md_2:px-4 md_2:flex md_2:items-center md_2:justify-center">
                 <Footer />
             </div>
             <ScrollToTopButton />
-        </div>
+        </>
     )
 }
 
