@@ -30,7 +30,7 @@ function CardPortfolio({ img, name, description, skills, url_git, url_project })
                         </h1>
                     </div>
 
-                    <div className='flex justify-between items-center'>
+                    <div className='flex justify-between items-center mt-3'>
                         <div className='flex gap-3 items-center'>
                             {skills && skills.map((SkillIcon, key) => (
                                 <div key={key}>
