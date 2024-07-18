@@ -23,7 +23,6 @@ function Skils() {
     useEffect(() => {
         if (isInView) {
             mainControls.start("show")
-            console.log("Teste");
         }
     }, [isInView]);
 
@@ -66,7 +65,7 @@ function Skils() {
                 >
                     <Tooltip text="Javascript">
                         <div className="bg-[#171717c4] shadow-custom rounded-md px-24 md_3:px-12 md_3:py-6 md_1:px-20 md_2:px-14 py-10 flex flex-col justify-center items-center gap-2 transition duration-1000 delay-0 hover:shadow-skills">
-                            <FaJs size={40} color="#F2F2F2" className="w-6"/>
+                            <FaJs size={40} color="#F2F2F2" className="w-6" />
                         </div>
                     </Tooltip>
                 </motion.div>
@@ -78,7 +77,7 @@ function Skils() {
                 >
                     <Tooltip text="HTML 5">
                         <div className="bg-[#171717c4] shadow-custom rounded-md px-24 md_3:px-12 md_3:py-6 md_1:px-20 md_2:px-14 py-10 flex flex-col justify-center items-center gap-2 transition duration-1000 delay-0 hover:shadow-skills">
-                            <FaHtml5 size={40} color="#F2F2F2" className="w-6"/>
+                            <FaHtml5 size={40} color="#F2F2F2" className="w-6" />
                         </div>
                     </Tooltip>
                 </motion.div>
@@ -90,7 +89,7 @@ function Skils() {
                 >
                     <Tooltip text="CSS 3">
                         <div className="bg-[#171717c4] shadow-custom rounded-md px-24 md_3:px-12 md_3:py-6 md_1:px-20 md_2:px-14 py-10 flex flex-col justify-center items-center gap-2 transition duration-1000 delay-0 hover:shadow-skills">
-                            <FaCss3 size={40} color="#F2F2F2" className="w-6"/>
+                            <FaCss3 size={40} color="#F2F2F2" className="w-6" />
                         </div>
                     </Tooltip>
                 </motion.div>
@@ -102,7 +101,7 @@ function Skils() {
                 >
                     <Tooltip text="React">
                         <div className="bg-[#171717c4] shadow-custom rounded-md px-24 md_3:px-12 md_3:py-6 md_1:px-20 md_2:px-14 py-10 flex flex-col justify-center items-center gap-2 transition duration-1000 delay-0 hover:shadow-skills">
-                            <FaReact size={40} color="#F2F2F2" className="w-6"/>
+                            <FaReact size={40} color="#F2F2F2" className="w-6" />
                         </div>
                     </Tooltip>
                 </motion.div>
@@ -114,12 +113,12 @@ function Skils() {
                 >
                     <Tooltip text="NodeJS">
                         <div className="bg-[#171717c4] shadow-custom rounded-md px-24 md_3:px-12 md_3:py-6 md_1:px-20 md_2:px-14 py-10 flex flex-col justify-center items-center gap-2 transition duration-1000 delay-0 hover:shadow-skills">
-                            <FaNodeJs size={40} color="#F2F2F2" className="w-6"/>
+                            <FaNodeJs size={40} color="#F2F2F2" className="w-6" />
                         </div>
                     </Tooltip>
                 </motion.div>
-          
-               
+
+
                 <motion.div
                     initial={{ y: 10, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -128,7 +127,7 @@ function Skils() {
                 >
                     <Tooltip text="PHP">
                         <div className="bg-[#171717c4] shadow-custom rounded-md px-24 md_3:px-12 md_3:py-6 md_1:px-20 md_2:px-14 py-10 flex flex-col justify-center items-center gap-2 transition duration-1000 delay-0 hover:shadow-skills">
-                            <FaPhp size={40} color="#F2F2F2" className="w-7"/>
+                            <FaPhp size={40} color="#F2F2F2" className="w-7" />
                         </div>
                     </Tooltip>
                 </motion.div>
@@ -140,7 +139,7 @@ function Skils() {
                 >
                     <Tooltip text="Github">
                         <div className="bg-[#171717c4] shadow-custom rounded-md px-24 md_3:px-12 md_3:py-6 md_1:px-20 md_2:px-14 py-10 flex flex-col justify-center items-center gap-2 transition duration-1000 delay-0 hover:shadow-skills">
-                            <FaGithub size={40} color="#F2F2F2" className="w-6"/>
+                            <FaGithub size={40} color="#F2F2F2" className="w-6" />
                         </div>
                     </Tooltip>
                 </motion.div>
@@ -152,7 +151,7 @@ function Skils() {
                 >
                     <Tooltip text="Unity">
                         <div className="bg-[#171717c4] shadow-custom rounded-md px-24 md_3:px-12 md_3:py-6 md_1:px-20 md_2:px-14 py-10 flex flex-col justify-center items-center gap-2 transition duration-1000 delay-0 hover:shadow-skills">
-                            <FaUnity size={40} color="#F2F2F2" className="w-6"/>
+                            <FaUnity size={40} color="#F2F2F2" className="w-6" />
                         </div>
                     </Tooltip>
                 </motion.div>
@@ -164,7 +163,7 @@ function Skils() {
                 >
                     <Tooltip text="SASS">
                         <div className="bg-[#171717c4] shadow-custom rounded-md px-24 md_3:px-12 md_3:py-6 md_1:px-20 md_2:px-14 py-10 flex flex-col justify-center items-center gap-2 transition duration-1000 delay-0 hover:shadow-skills">
-                            <FaSass size={40} color="#F2F2F2" className="w-6"/>
+                            <FaSass size={40} color="#F2F2F2" className="w-6" />
                         </div>
                     </Tooltip>
                 </motion.div>
@@ -176,7 +175,7 @@ function Skils() {
                 >
                     <Tooltip text="Figma">
                         <div className="bg-[#171717c4] shadow-custom rounded-md px-24 md_3:px-12 md_3:py-6 md_1:px-20 md_2:px-14 py-10 flex flex-col justify-center items-center gap-2 transition duration-1000 delay-0 hover:shadow-skills">
-                            <FaFigma size={40} color="#F2F2F2" className="w-6"/>
+                            <FaFigma size={40} color="#F2F2F2" className="w-6" />
                         </div>
                     </Tooltip>
                 </motion.div>

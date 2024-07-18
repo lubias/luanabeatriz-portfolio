@@ -96,31 +96,13 @@ function Portfolio() {
                     className="w-full lg:w-4/5 xl:w-3/4 2xl:w-2/3 mx-auto"
                 >
                     <SwiperSlide>
-                        <img src="/projects/tumbs/movieListTumb.png" alt="Projeto 1" />
+                        <img src="/projects/tumbs/kleytow.png" alt="Kleytow Portfolio" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src="/projects/tumbs/arquiteturaTumb.png" alt="Projeto 2" />
+                        <img src="/projects/tumbs/stream_vibe.png" alt="Stream Vibe" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="Natureza 1" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="Natureza 2" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="Natureza 3" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src="https://swiperjs.com/demos/images/nature-6.jpg" alt="Natureza 4" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src="https://swiperjs.com/demos/images/nature-7.jpg" alt="Natureza 5" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src="https://swiperjs.com/demos/images/nature-8.jpg" alt="Natureza 6" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src="https://swiperjs.com/demos/images/nature-9.jpg" alt="Natureza 7" />
+                        <img src="/projects/tumbs/planner.png" alt="Plann.er" />
                     </SwiperSlide>
                 </Swiper>
             </motion.div>
