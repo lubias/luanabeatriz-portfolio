@@ -33,8 +33,8 @@ function page() {
         name: "Plann.er",
         description: "Plann.er é um projeto front-end de uma aplicação utilizada para organizar viagens e convidar amigos. Desenvolvida com um design moderno e intuitivo. Este projeto foi proposto e desenvolvido na New Level Week da escola rocketseat.",
         skills: [FaReact, SiVite, RiTailwindCssFill],
-        url_git: "https://planner-lubias-projects.vercel.app/",
-        url_project: "https://github.com/lubias/planner"
+        url_git: "https://github.com/lubias/planner",
+        url_project: "https://planner-lubias-projects.vercel.app/"
     };
 
     return (
