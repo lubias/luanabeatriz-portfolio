@@ -38,21 +38,21 @@ function page() {
     };
 
     return (
-        <div className='h-screen lg_3:h-auto'>
+        <div className='min-h-screen lg_3:h-auto flex flex-col justify-between'>
             <div className="px-56 lg_2:px-12 sm_1:px-4">
                 <Header />
-                <div className='mt-14 mb-10'>
+                <div className='mb-7'>
                     <motion.h1
                         initial={{ x: -10, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         exit={{ x: 10, opacity: 0 }}
                         transition={{ duration: 1, delay: 0.4 }}
-                        className='text-left text-2xl sm-0:text-4xl my-10 font-sans'
+                        className='text-left text-2xl sm-0:text-4xl font-sans'
                     >
                         Projetos
                     </motion.h1>
                 </div>
-                <div className='flex flex-col gap-8'>
+                <div className='flex flex-col gap-8 mb-10'>
                     <motion.div
                         variants={{
                             hidden: { opacity: 0 },
@@ -72,8 +72,7 @@ function page() {
                     </motion.div>
                 </div>
             </div>
-            <div className='h-[75px]'></div>
-            <div className="absolute bottom-0 w-full lg_3:relative lg_3:bottom-auto">
+            <div className="w-full lg_3:relative">
                 <hr />
                 <div className='px-56 md_2:px-4 md_2:flex md_2:items-center md_2:justify-center'>
                     <Footer />

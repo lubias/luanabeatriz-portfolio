@@ -7,24 +7,23 @@ function CardPortfolio({ img, name, description, skills, url_git, url_project })
     return (
         <>
             <motion.div
-                class="card shadow-custom h-[450px] w-[full] group gap-4 rounded-[1.5em] relative flex justify-end flex-col p-[1.5em] z-[1] overflow-hidden space-y-5"
+                className="card shadow-custom h-[450px] w-[full] group gap-4 rounded-[1.5em] relative flex justify-end flex-col p-[1.5em] z-[1] overflow-hidden space-y-5"
                 initial={{ x: 10, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 exit={{ x: -10, opacity: 0 }}
                 transition={{ duration: 1 }}
             >
-                <div class="absolute top-0 left-0 h-full w-full bg-[#171717]">
+                <div className="absolute top-0 left-0 h-full w-full bg-[#171717]">
                     <img src={img} alt="" className='group-hover:opacity-15' />
                 </div>
                 <div
-                    class="container text-white z-[2] relative flex flex-col gap-[0.5em]"
+                    className="container text-white z-[2] relative flex flex-col gap-[0.5em]"
                 >
-                    <div class="h-fit w-full">
+                    <div className="h-fit w-full">
                         <h1
                             className="font-weight: 900;
                 -webkit-text-fill-color: transparent;
-                -webkit-text-stroke-width: 1px;"
-                            class="card_heading text-xl tracking-[.2em]"
+                -webkit-text-stroke-width: 1px; card_heading text-xl tracking-[.2em]"
                         >
                             {name}
                         </h1>
@@ -49,7 +48,7 @@ function CardPortfolio({ img, name, description, skills, url_git, url_project })
                     </div>
                 </div>
                 <p
-                    class="block text-blackfont-light text-sm relative h-[0em] group-hover:h-full leading-[1.2em] duration-500 overflow-hidden"
+                    className="block text-blackfont-light text-sm relative h-[0em] group-hover:h-full leading-[1.2em] duration-500 overflow-hidden"
                 >
                     {description}
                 </p>
