@@ -37,6 +37,15 @@ function page() {
         url_project: "https://planner-lubias-projects.vercel.app/"
     };
 
+    const spiritMovieListDetails = {
+        img: "/projects/tumbs/spirit_movie_list.png",
+        name: "Spirit Movie List",
+        description: "Spirit MovieList é um projeto front-end que oferece uma interface interativa e de fácil navegação. Através da integração com a API <a href='https://www.themoviedb.org/'>TMDB</a>, o site exibe uma lista de filmes com detalhes como avaliação, elenco, sinopse e mais. Este projeto me permitiu aplicar e aprimorar minhas habilidades em desenvolvimento web, com foco em React, consumo de APIs e design responsivo, proporcionando uma experiência dinâmica e informativa para os usuários.",
+        skills: [FaReact, SiNextdotjs, RiTailwindCssFill],
+        url_git: "https://github.com/lubias/spirit-movielist-front",
+        url_project: "https://spirit-movielist.vercel.app/"
+    };
+
     return (
         <div className='min-h-screen lg_3:h-auto flex flex-col justify-between'>
             <div className="px-56 lg_2:px-12 sm_1:px-4">
@@ -69,6 +78,7 @@ function page() {
                         <CardPortfolio {...kleytowDetails} />
                         <CardPortfolio {...streamVibeDetails} />
                         <CardPortfolio {...plannerDetails} />
+                        <CardPortfolio {...spiritMovieListDetails} />
                     </motion.div>
                 </div>
             </div>

@@ -25,7 +25,7 @@ function Hero() {
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: -10, opacity: 0 }}
                 transition={{ duration: 0.3 }}
-                className='text-center text-xl md_1:text-base mb-14' font-sans
+                className='text-center text-xl md_1:text-base mb-14 font-sans'
             >
                 Full-stack Developer
             </motion.h4>

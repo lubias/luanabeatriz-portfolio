@@ -20,7 +20,7 @@ function About() {
                     animate={{ x: 0, opacity: 1 }}
                     exit={{ x: 10, opacity: 0 }}
                     transition={{ duration: 1 }}
-                    src="/Luana.jpg" className='h-52 rounded' alt=""
+                    src="/Luana.jpeg" className='h-52 rounded' alt=""
                 />
                 <motion.div 
                     initial={{ x: 10, opacity: 0 }}
