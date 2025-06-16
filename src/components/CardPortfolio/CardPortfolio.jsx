@@ -38,9 +38,10 @@ function CardPortfolio({ img, name, description, skills, url_git, url_project })
                             ))}
                         </div>
                         <div className='flex gap-3 items-center'>
-                            <Link href={url_project} target='_blank'>
-                                <FaLaptopCode className='text-[#F2F2F2] transition duration-1000 delay-0 hover:text-[#baa0ba]' size={25} alt="Project" />
-                            </Link>
+                            {url_project ?
+                                <Link href={url_project} target='_blank'>
+                                    <FaLaptopCode className='text-[#F2F2F2] transition duration-1000 delay-0 hover:text-[#baa0ba]' size={25} alt="Project" />
+                                </Link> : ""}
                             <Link href={url_git} target='_blank'>
                                 <FaGithub className='text-[#F2F2F2] transition duration-1000 delay-0 hover:text-[#baa0ba]' size={25} alt="GitHub" />
                             </Link>

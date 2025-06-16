@@ -16,7 +16,6 @@ function page() {
         description: "O projeto em questão, é um portfólio e blog especialmente desenvolvido para um talentoso artista 3D. Além de destacar suas criações impressionantes, o site oferece um CMS personalizado que permite ao artista criar e gerenciar suas próprias postagens, garantindo assim uma plataforma dinâmica e atualizada para compartilhar seu trabalho e insights criativos",
         skills: [FaReact, SiNextdotjs, RiTailwindCssFill, SiTypescript],
         url_git: "https://github.com/DVisioun/cleiton-port-front",
-        url_project: "https://kleytowmoreira.art/home"
     };
 
     const streamVibeDetails = {
@@ -45,6 +44,15 @@ function page() {
         url_git: "https://github.com/lubias/spirit-movielist-front",
         url_project: "https://spirit-movielist.vercel.app/"
     };
+
+    const mecanicaMundialDetails = {
+        img: "/projects/tumbs/mecanica_mundial.png",
+        name: "Mecânica Mundial",
+        description: "Projeto desenvolvido para a empresa Mecânica Mundial, especializada em serviços automotivos em Belo Horizonte. O objetivo foi criar um site moderno, atrativo e intuitivo, com foco na captação de novos clientes e na centralização de oportunidades de contato para profissionais interessados em trabalhar na empresa.",
+        skills: [FaReact, SiNextdotjs, RiTailwindCssFill],
+        url_git: "https://github.com/Mecanica-Mundial/mecanica-mundial",
+        url_project: "https://mecanica-mundial.vercel.app/"
+    }
 
     return (
         <div className='min-h-screen lg_3:h-auto flex flex-col justify-between'>
@@ -79,6 +87,7 @@ function page() {
                         <CardPortfolio {...streamVibeDetails} />
                         <CardPortfolio {...plannerDetails} />
                         <CardPortfolio {...spiritMovieListDetails} />
+                        <CardPortfolio {...mecanicaMundialDetails} />
                     </motion.div>
                 </div>
             </div>
