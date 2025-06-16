@@ -107,6 +107,9 @@ function Portfolio() {
                     <SwiperSlide>
                         <img src="/projects/tumbs/spirit_movie_list.png" alt="Spirit Movie List" />
                     </SwiperSlide>
+                    <SwiperSlide>
+                        <img src="/projects/tumbs/mecanica_mundial.png" alt="Mecânica Mundial" />
+                    </SwiperSlide>
                 </Swiper>
             </motion.div>
             <motion.div
